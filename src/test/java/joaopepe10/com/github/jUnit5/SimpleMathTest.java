@@ -1,6 +1,7 @@
 package joaopepe10.com.github.jUnit5;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,6 +21,7 @@ class SimpleMathTest {
     }
 
     @Test
+    @DisplayName("Should return the sum of 6.2 + 2 = 8.2")
     void testSum(){
         Double actual = math.sum(firstNumber, secondNumber);
         double expected = 8.2D;
@@ -30,6 +32,7 @@ class SimpleMathTest {
     }
 
     @Test
+    @DisplayName("Should return the subtraction of 6.2 - 2 = 4.2")
     void testSubtraction(){
         Double actual = math.subtraction(firstNumber, secondNumber);
         double expected = 4.2D;
@@ -39,6 +42,7 @@ class SimpleMathTest {
     }
 
     @Test
+    @DisplayName("Should return the multiplication of 6.2 * 2 = 12.4")
     void testMultiplication(){
         Double actual = math.multiplication(firstNumber, secondNumber);
         double expected = 12.4D;
@@ -48,6 +52,7 @@ class SimpleMathTest {
     }
 
     @Test
+    @DisplayName("Should return the division of 6.2 / 2 = 3.1")
     void testDivision(){
         Double actual = math.division(firstNumber, secondNumber);
         double expected = 3.1D;
@@ -67,6 +72,7 @@ class SimpleMathTest {
     }
 
     @Test
+    @DisplayName("Should return the square root of 49 = 7")
     void testSquareRoot(){
         Double actual = math.squareRoot(number);
         double expected = 7D;
